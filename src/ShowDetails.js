@@ -11,6 +11,7 @@ const ShowDetails = () => {
     const APIResult = JSON.parse(APIRes);
     console.log(Id);
     console.log(JSON.parse(APIRes));
+    // eslint-disable-next-line array-callback-return
     const ShowDetails = APIResult.filter((data) => {
         if(data.show.id === parseInt(Id)){
             return data.show;
